@@ -1,0 +1,12 @@
+.verify-docs-page { max-width: 900px; }
+.empty-msg { color: var(--text-muted); }
+.verify-app-block { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; margin-bottom: 18px; }
+.verify-app-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.verify-app-meta { font-size: 0.82rem; color: var(--text-muted); }
+.verify-docs-list { display: flex; flex-direction: column; gap: 10px; }
+.verify-doc-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding: 8px 12px; background: var(--bg); border-radius: var(--radius); }
+.verify-doc-name { font-size: 0.9rem; color: var(--primary); }
+.verify-doc-actions { display: flex; gap: 8px; margin-left: auto; }
+.reject-form { width: 100%; }
+.reject-form-actions { display: flex; gap: 8px; }
+.rejection-note { font-size: 0.78rem; color: var(--danger); }

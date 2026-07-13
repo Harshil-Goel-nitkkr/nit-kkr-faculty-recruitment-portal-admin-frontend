@@ -1,0 +1,68 @@
+.admin-job-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-job-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-job-id {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.admin-job-open {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--success);
+}
+
+.admin-job-expired {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--danger);
+}
+
+.admin-job-card h3 {
+  margin: 4px 0;
+  color: var(--primary);
+}
+
+.admin-job-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.admin-job-requirements {
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.admin-job-deadline {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.admin-job-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.admin-job-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}

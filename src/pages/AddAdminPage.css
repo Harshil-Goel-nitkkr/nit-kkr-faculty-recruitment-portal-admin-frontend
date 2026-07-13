@@ -1,0 +1,5 @@
+.add-admin-page { max-width: 540px; }
+.add-admin-form { background: var(--surface); padding: 24px; border-radius: var(--radius); border: 1px solid var(--border); }
+.input-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+.input-field label { font-size: 0.9rem; font-weight: 600; }
+.input-field select { padding: 10px 12px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 0.95rem; }

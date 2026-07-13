@@ -1,0 +1,24 @@
+:root {
+  --primary: #7a1f2b;
+  --primary-dark: #5c1620;
+  --secondary: #f5a623;
+  --bg: #f0f2f5;
+  --surface: #ffffff;
+  --text: #232323;
+  --text-muted: #6b6b6b;
+  --border: #e2dfdb;
+  --success: #2e7d32;
+  --warning: #b07b06;
+  --danger: #c62828;
+  --radius: 8px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --font: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font); background: var(--bg); color: var(--text); }
+a { color: var(--primary); text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+input, select, textarea { font-family: inherit; }
+.container { max-width: 1300px; margin: 0 auto; padding: 0 20px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
