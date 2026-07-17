@@ -134,7 +134,7 @@ const JobApplicationsPage = () => {
           <p>
             <b>Resume:</b>{' '}
             {selected.resumeUrl ? (
-              <a href={`http://localhost:5000${selected.resumeUrl}`} target="_blank" rel="noreferrer">View Resume</a>
+              <a href={selected.resumeUrl} target="_blank" rel="noreferrer">View Resume</a>
             ) : 'Not uploaded'}
           </p>
 

@@ -8,8 +8,6 @@ import StatusBadge from '../components/common/StatusBadge.jsx';
 import InputField from '../components/common/InputField.jsx';
 import './VerifyDocumentsPage.css';
 
-const API_FILE_BASE = (import.meta.env.VITE_API_BASE_URL || '').replace('/api', '');
-
 const VerifyDocumentsPage = () => {
   const [applications, setApplications] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -68,7 +66,7 @@ const VerifyDocumentsPage = () => {
           <div className="verify-docs-list">
             {app.documents.map((doc) => (
               <div key={doc._id} className="verify-doc-row">
-                <a href={`${API_FILE_BASE}${doc.fileUrl}`} target="_blank" rel="noreferrer" className="verify-doc-name">
+                <a href={doc.fileUrl} target="_blank" rel="noreferrer" className="verify-doc-name">
                   📎 {doc.name}
                 </a>
                 <StatusBadge status={doc.verificationStatus} />
